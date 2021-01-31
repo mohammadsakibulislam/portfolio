@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background: #566c2b;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    padding: 0;
+    margin: 0;
+}
+#header a{
+    color: #fff;
+}
+#header ul{
+    list-style: none;
+    display: flex;
+}
+.logo{
+    margin: 0 auto;
+    font-size: 30px;
+}
+#menu li{
+    padding: 10px;
+}
+#social-links li{
+    padding: 10px;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-box{
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    max-width: 370px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.service-box img{
+    width: 100%;
+}
+.service-box h2{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+#app{
+    height: 213px;
+}
+#main{
+    display: flex;
+}
+aside{
+    padding: 10px;
+    flex: 0 0 20vw;
+    background: beige;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside ul a{
+    color: #566c2b;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid gray;
+}
+aside img{
+    width: 100%;
+}
+article{
+    padding: 10px;
+}
+footer{
+    background: #566c2b;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+}
+.call-to-action a{
+    background: grey;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 8px 13px;
+    display: block;
+}
+.call-to-action a:hover{
+    background: transparent;
+    border: 2px solid grey;
+    color: gray;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+
+}
+
+@media screen and (max-width:850px){
+    .service-box{
+        flex-basis: 48%;
+    }
+    aside{
+        flex: 0 0 30vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        order: -1;
+        margin-top: 22px;
+        text-align: center;
+    }
+    #main{
+        flex-direction: column;
+    }
+    #menu{
+        margin-right: 40px;
+    }
+    #social-links ul{
+        margin:0;
+        padding: 0;
+    }
+    article{
+        order: -1;
+    }
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+}
